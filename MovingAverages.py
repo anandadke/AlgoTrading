@@ -1,6 +1,4 @@
 # pip install fyers-apiv2
-# pip install selenium
-# pip install webdriver-manager
 
 from fyers_api.Websocket import ws
 from fyers_api import fyersModel
@@ -29,15 +27,15 @@ pin2 = document_file.pin2
 pin3 = document_file.pin3
 pin4 = document_file.pin4
 
-APP_ID =  "TYCMM54OOQ" # App ID from myapi dashboard is in the form appId-appType. Example - EGNI8CE27Q-100, In this code EGNI8CE27Q will be APP_ID and 100 will be the APP_TYPE
+APP_ID =  "EGNI8CE27Q" # App ID from myapi dashboard is in the form appId-appType. Example - EGNI8CE27Q-100, In this code EGNI8CE27Q will be APP_ID and 100 will be the APP_TYPE
 APP_TYPE = "100"
 SECRET_KEY = 'BNP2JTCR9Z'
 client_id= f'{APP_ID}-{APP_TYPE}'
 
-FY_ID = "XA38106"  # Your fyers ID
+FY_ID = "XA12345"  # Your fyers ID
 APP_ID_TYPE = "2"  # Keep default as 2, It denotes web login
-TOTP_KEY = "CSMGTRPPJBS2FRM7RHJAPVXNB4HPEJ6W"  # TOTP secret is generated when we enable 2Factor TOTP from myaccount portal
-PIN = "9296"  # User pin for fyers account
+TOTP_KEY = "CSMGTRPPJBS2FRM7RHJAPVXNB4432154"  # TOTP secret is generated when we enable 2Factor TOTP from myaccount portal
+PIN = "XXXX"  # User pin for fyers account
 
 REDIRECT_URI = "http://localhost:8080/apis/broker/login/fyers"  # Redirect url from the app.
 
