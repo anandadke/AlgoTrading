@@ -15,14 +15,14 @@ from urllib.parse import parse_qs,urlparse
 import sys
 
 
-APP_ID =  "TYCMM54OOQ" # App ID from myapi dashboard is in the form appId-appType. Example - EGNI8CE27Q-100, In this code EGNI8CE27Q will be APP_ID and 100 will be the APP_TYPE
+APP_ID =  "EGNI8CE27Q" # App ID from myapi dashboard is in the form appId-appType. Example - EGNI8CE27Q-100, In this code EGNI8CE27Q will be APP_ID and 100 will be the APP_TYPE
 APP_TYPE = "100"
-SECRET_KEY = 'BNP2JTCR9Z'
+SECRET_KEY = 'BNP2JTCR1d'
 client_id= f'{APP_ID}-{APP_TYPE}'
 
-FY_ID = "XA38106"  # Your fyers ID
+FY_ID = "*******"  # Your fyers ID
 APP_ID_TYPE = "2"  # Keep default as 2, It denotes web login
-TOTP_KEY = "CSMGTRPPJBS2FRM7RHJAPVXNB4HPEJ6W"  # TOTP secret is generated when we enable 2Factor TOTP from myaccount portal
+TOTP_KEY = "CSMGTRPPJBS2FRM7RHJAPVXNB443156"  # TOTP secret is generated when we enable 2Factor TOTP from myaccount portal
 PIN = "4321"  # User pin for fyers account
 
 REDIRECT_URI = "http://localhost:8080/apis/broker/login/fyers"  # Redirect url from the app.
